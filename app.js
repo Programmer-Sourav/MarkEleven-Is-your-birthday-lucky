@@ -9,7 +9,7 @@ const calculateSum = (date) => {
   for (let digit of date) {
     sum = sum + Number(digit);
   }
-  checkIsNumberLucky(sum, numberToCheck);
+ 
 };
 
 const checkIsNumberLucky = (sumOfDate, numberToCheck) => {
@@ -30,7 +30,8 @@ checkButton.addEventListener("click", () => {
   const date = dateOfBirth.value;
   const numberToCheck = luckyNumber.value;
   if (date && numberToCheck) {
-    calculateSum(date);
+    const sumOfDate = calculateSum(date);
+    checkIsNumberLucky(sumOfDate, numberToCheck);
   } else {
     showMessage("Please enter both the fields");
   }
