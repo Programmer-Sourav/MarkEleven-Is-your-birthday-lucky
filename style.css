@@ -60,6 +60,19 @@
     margin: auto;
     display: block;
   }
+
+  #privacy-container {
+    display: block;
+    margin: auto;
+    background-color: #1cb75a;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: x-large;
+    border-width: medium;
+    border-radius: 5px;
+  }
   
   #output-container {
     display: block;
